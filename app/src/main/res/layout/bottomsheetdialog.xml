@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <View
+        android:layout_width="70dp"
+        android:layout_height="5dp"
+        android:background="@drawable/roundbutton3"
+        android:layout_marginTop="6dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="88dp"
+        android:background="@drawable/roundbutton2"
+        >
+    <Button
+            android:id="@+id/car"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_directions_car_24"
+            android:backgroundTint="@color/active_buttons_and_links_bg_pressed_light"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+
+
+        />
+
+        <Button
+            android:id="@+id/bike"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_baseline_directions_bike_24"
+            android:backgroundTint="@color/active_buttons_and_links_bg_pressed_light"
+            android:foreground="?selectableItemBackgroundBorderless"
+
+
+            />
+
+        <Button
+            android:id="@+id/foot"
+            android:layout_marginLeft="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_baseline_directions_walk_24"
+            android:backgroundTint="@color/active_buttons_and_links_bg_pressed_light"
+            android:foreground="?selectableItemBackgroundBorderless"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        >
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_baseline_my_location_24"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginTop="30dp"
+        />
+<Button
+            android:layout_marginLeft="15dp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/goFrom"
+            android:text="De : \n   Ma Position"
+            android:textFontWeight="444"
+            android:fontFamily="arial"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:background="@android:color/transparent"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="31dp"
+        android:layout_below="@+id/goFrom"
+        android:background="@color/additional_description_light"
+        />
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@drawable/redlocation"
+            android:backgroundTint="@color/buy_button_color"
+            android:layout_marginTop="30dp"
+            />
+        <Button
+            android:layout_marginLeft="15dp"
+            android:textAlignment="textStart"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_height="55dp"
+            android:id="@+id/goTo"
+            android:background="?android:attr/selectableItemBackground"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:text="À :\n   Définissez l'arrivée"
+            android:textFontWeight="444"
+
+            android:fontFamily="arial"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/goTo"
+        android:background="@color/additional_description_light"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            android:background="?attr/selectableItemBackground"
+            android:text="Annuler"
+            android:textColor="@color/active_buttons_and_links_bg_pressed_light"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/GO"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:background="@android:drawable/divider_horizontal_textfield"
+            android:drawableLeft="@drawable/ic_baseline_navigation_24"
+            android:drawableTint="@color/active_buttons_and_links_bg_pressed_light"
+            android:text="Démarrer"
+            android:textAllCaps="false"
+            android:textColor="@color/grey"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

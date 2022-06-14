@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+    </org.osmdroid.views.MapView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/cancelSearch"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:foreground="@android:drawable/ic_menu_close_clear_cancel"
+            android:backgroundTintMode="add"
+            android:background="@color/white"
+            android:foregroundTint="@color/grey"
+            android:layout_weight="0"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/editDeparture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:completionThreshold="1"
+            android:hint="Trouver un endroit"
+            tools:ignore="MissingClass" />
+
+        <Button
+            android:id="@+id/buttonSearchDep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="0"
+            android:text="search" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="61dp"
+            android:layout_marginTop="68dp"
+            android:background="@drawable/roundbutton"
+            android:src="@drawable/earth_globe"
+            app:tint="@color/active_color_primary_light" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/roundbutton2"
+            android:foreground="@drawable/ic_action_search"
+            android:foregroundTint="@color/grey"
+
+            />
+
+        <Button
+            android:id="@+id/vehucule"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/search_button"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/roundbutton"
+            android:foreground="@drawable/ic_baseline_directions_car_24"
+            android:foregroundTint="@color/active_color_primary_light" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/distanc"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/duration_distance"
+
+                android:drawableLeft="@drawable/destination_flag"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/color_warning_alpha_low"
+                android:padding="4dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:textColor="@color/backup_restore_icons_yellow"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+
+
+                android:id="@+id/duration"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/duration_distance"
+                android:drawableLeft="@drawable/timer"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/color_warning_alpha_low"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
+                android:textColor="@color/backup_restore_icons_yellow"
+                android:textSize="20dp"
+                android:textStyle="bold"
+
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="135dp"
+            android:background="@drawable/ic_eraser"
+            android:foreground="?selectableItemBackgroundBorderless" />
+
+        <Button
+            android:id="@+id/zoomIn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_centerInParent="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="67dp"
+            android:background="@drawable/roundbutton"
+            android:foreground="@drawable/ic_baseline_add_24" />
+
+        <Button
+            android:id="@+id/zoomOut"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/roundbutton"
+
+            android:foreground="@drawable/ic_baseline_horizontal_rule_24" />
+
+        <Button
+            android:id="@+id/TrackB"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/roundbutton2"
+            android:backgroundTintMode="screen"
+            android:foreground="@drawable/my_current_location" />
+
+        <Button
+            android:id="@+id/direction"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="64dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:foreground="@drawable/ic_baseline_directions_24"
+            android:foregroundTint="@color/map_widget_blue" />
+
+        <Button
+            android:id="@+id/menuOpen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="7dp"
+            android:background="@color/white"
+            android:foreground="@drawable/ic_baseline_menu_24"
+            android:foregroundTint="@color/grey"
+            android:visibility="gone"
+
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

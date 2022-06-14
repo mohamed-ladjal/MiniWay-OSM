@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Search123"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="    Rechercher"
+         />
+    <item
+        android:id="@+id/favorite1234"
+        android:icon="@android:drawable/btn_star"
+        android:title="   Favoris"
+
+        />
+
+    <item
+        android:id="@+id/mapConfig"
+        android:icon="@drawable/layers"
+        android:title="  Configurer la carte"
+
+        />
+    <item
+        android:id="@+id/mesure"
+        android:icon="@drawable/measure"
+        android:title="   Mesure une distance"
+        />
+
+    <item
+        android:id="@+id/share1234"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="   Partager mes coordonnées"
+     />
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/about"
+        android:title="    à propos de nous"
+        />
+
+
+
+</menu>

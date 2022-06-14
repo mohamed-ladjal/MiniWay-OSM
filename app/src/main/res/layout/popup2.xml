@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Définir l'arrivée"
+        android:fontFamily="arial"
+        android:textFontWeight="555"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:fontFamily="arial"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:padding="13dp"
+        android:text="    Rechercher"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textFontWeight="444"
+       />
+
+    <Button
+        android:id="@+id/selectFromTheMap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:drawableTint="@color/grey"
+        android:background="@android:color/transparent"
+        android:padding="13dp"
+        android:textAllCaps="false"
+        android:fontFamily="arial"
+        android:textFontWeight="444"
+        android:textAlignment="textStart"
+        android:text="   Sélectionnez sur la carte"
+        android:foreground="?selectableItemBackgroundBorderless"
+    />
+    <Button
+        android:id="@+id/favorite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:drawableTint="@color/grey"
+        android:background="@android:color/transparent"
+        android:padding="13dp"
+        android:textAllCaps="false"
+        android:fontFamily="arial"
+        android:textFontWeight="444"
+        android:textAlignment="textStart"
+        android:text="   Favoris"
+        android:foreground="?selectableItemBackgroundBorderless"
+        />
+    <Button
+        android:id="@+id/marques"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:drawableTint="@color/activity_background_transparent_color_dark"
+        android:background="@android:color/transparent"
+        android:padding="13dp"
+        android:textAllCaps="false"
+        android:fontFamily="arial"
+        android:textFontWeight="444"
+        android:textAlignment="textStart"
+        android:text="   Marques"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:visibility="gone"
+        />
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
