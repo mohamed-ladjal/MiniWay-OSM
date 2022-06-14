@@ -104,8 +104,15 @@ import java.util.Stack;
 import io.ticofab.androidgpxparser.parser.domain.Gpx;
 import io.ticofab.androidgpxparser.parser.domain.Track;
 import io.ticofab.androidgpxparser.parser.domain.TrackPoint;
-import io.ticofab.androidgpxparser.parser.domain.TrackSegment;
+import io.ticofab.androidgpxparser.parser.domain.TrackSegment; 
 
+/*****************************
+author :mohamed laadjel
+facebook="https://www.facebook.com/ItzMouhLaad"
+twitter="@mouh_laad"
+github="https://github.com/mohamed-ladjal"
+email:mohamed.laadjel2019@gmail.com
+*******************************/
 
 public class MainActivity extends AppCompatActivity  {
     private MapView map;
